@@ -144,3 +144,189 @@ Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // Tcl Message: INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/calc.gen/sources_1'. 
 // Tcl Message: Scanning sources... Finished scanning sources 
 // Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1505.992 ; gain = 376.250 
+// Project name: calc; location: C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc; part: xc7z007sclg400-1
+dismissDialog("Open Project"); // bj (Open Project Progress)
+// [Engine Memory]: 1,168 MB (+7478kb) [00:00:28]
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (MUX2_1.v) elapsed time: 0.3s
+// Elapsed time: 44 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MUX2_1 (MUX2_1.v)]", 5, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MUX2_1 (MUX2_1.v)]", 5, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectCodeEditor("MUX2_1.v", 134, 222); // ac (MUX2_1.v)
+selectCodeEditor("MUX2_1.v", 222, 37); // ac (MUX2_1.v)
+selectCodeEditor("MUX2_1.v", 242, 210); // ac (MUX2_1.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("MUX2_1.v", 186, 376); // ac (MUX2_1.v)
+selectCodeEditor("MUX2_1.v", 182, 361); // ac (MUX2_1.v)
+// Elapsed Time for: 'L.f': 56s
+selectCodeEditor("MUX2_1.v", 217, 301); // ac (MUX2_1.v)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 58s
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // J (PAResourceOtoP.PAViews_CODE, PlanAheadTabCode)
+// Elapsed Time for: 'L.f': 01m:00s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ExtSign (ExtSign.v)]", 4, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectCodeEditor("ExtSign.v", 270, 199); // ac (ExtSign.v)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // J (PAResourceOtoP.PAViews_CODE, PlanAheadTabCode)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DM (DM.v)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DM (DM.v)]", 3, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectCodeEditor("DM.v", 375, 146); // ac (DM.v)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // J (PAResourceOtoP.PAViews_CODE, PlanAheadTabCode)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ALU (ALU.v)]", 2, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ALU (ALU.v)]", 2, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // J (PAResourceOtoP.PAViews_CODE, PlanAheadTabCode)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DM (DM.v)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DM (DM.v)]", 3, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectCodeEditor("DM.v", 121, 41); // ac (DM.v)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // J (PAResourceOtoP.PAViews_CODE, PlanAheadTabCode)
+// [GUI Memory]: 155 MB (+1838kb) [00:01:47]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MUX2_1 (MUX2_1.v)]", 5, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MUX2_1 (MUX2_1.v)]", 5, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectCodeEditor("MUX2_1.v", 103, 26); // ac (MUX2_1.v)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,180 MB. GUI used memory: 78 MB. Current time: 7/14/24, 1:59:13 PM EEST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01m:40s
+// Elapsed Time for: 'L.f': 01m:42s
+// Elapsed time: 22 seconds
+selectCodeEditor("MUX2_1.v", 130, 37); // ac (MUX2_1.v)
+typeControlKey((HResource) null, "MUX2_1.v", 'c'); // ac (MUX2_1.v)
+selectCodeEditor("MUX2_1.v", 92, 37); // ac (MUX2_1.v)
+typeControlKey((HResource) null, "MUX2_1.v", 'c'); // ac (MUX2_1.v)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ExtSign (ExtSign.v)]", 4, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ExtSign (ExtSign.v)]", 4, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ExtSign (ExtSign.v)]", 4, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectCodeEditor("ExtSign.v", 25, 43); // ac (ExtSign.v)
+typeControlKey((HResource) null, "ExtSign.v", 'v'); // ac (ExtSign.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DM (DM.v)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// Elapsed Time for: 'L.f': 01m:56s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DM (DM.v)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DM (DM.v)]", 3, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// Elapsed Time for: 'L.f': 01m:58s
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MUX2_1.v", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("MUX2_1.v", 191, 58); // ac (MUX2_1.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // J (PAResourceOtoP.PAViews_CODE, PlanAheadTabCode)
+// Elapsed Time for: 'L.f': 02m:00s
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ExtSign.v", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("ExtSign.v", 181, 54); // ac (ExtSign.v)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // J (PAResourceOtoP.PAViews_CODE, PlanAheadTabCode)
+// Elapsed Time for: 'L.f': 02m:02s
+// HMemoryUtils.trashcanNow. Engine heap size: 1,200 MB. GUI used memory: 80 MB. Current time: 7/14/24, 1:59:38 PM EEST
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ALU (ALU.v)]", 2, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ALU (ALU.v)]", 2, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectCodeEditor("ALU.v", 128, 36); // ac (ALU.v)
+typeControlKey((HResource) null, "ALU.v", 'v'); // ac (ALU.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 02m:12s
+// Elapsed Time for: 'L.f': 02m:14s
+// Elapsed time: 11 seconds
+selectCodeEditor("ALU.v", 227, 71); // ac (ALU.v)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // J (PAResourceOtoP.PAViews_CODE, PlanAheadTabCode)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// Elapsed time: 34 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), im_1 : IM (IM.v)]", 2, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), im_1 : IM (IM.v)]", 2, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectCodeEditor("IM.v", 111, 45); // ac (IM.v)
+typeControlKey((HResource) null, "IM.v", 'v'); // ac (IM.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 03m:04s
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("IM.v", 211, 40); // ac (IM.v)
+// TclEventType: DG_GRAPH_STALE
+// Elapsed Time for: 'L.f': 03m:06s
+// Elapsed Time for: 'L.f': 03m:08s
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 03m:16s
+typeControlKey(null, null, 'z');
+selectCodeEditor("IM.v", 119, 53); // ac (IM.v)
+// Elapsed Time for: 'L.f': 03m:18s
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MUX2_1 (MUX2_1.v)]", 7, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MUX2_1 (MUX2_1.v)]", 7, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectCodeEditor("MUX2_1.v", 197, 113); // ac (MUX2_1.v)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("MUX2_1.v", 149, 39); // ac (MUX2_1.v)
+selectCodeEditor("MUX2_1.v", 149, 39, false, false, false, false, true); // ac (MUX2_1.v) - Double Click
+selectCodeEditor("MUX2_1.v", 120, 38); // ac (MUX2_1.v)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("MUX2_1.v", 120, 38); // ac (MUX2_1.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 03m:28s
+selectCodeEditor("MUX2_1.v", 105, 41); // ac (MUX2_1.v)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Elapsed Time for: 'L.f': 03m:30s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ExtSign (ExtSign.v)]", 6, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ExtSign (ExtSign.v)]", 6, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// Elapsed Time for: 'L.f': 03m:32s
+selectCodeEditor("ExtSign.v", 102, 39); // ac (ExtSign.v)
+selectCodeEditor("ExtSign.v", 20, 61); // ac (ExtSign.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DM (DM.v)]", 5, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DM (DM.v)]", 5, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// Elapsed Time for: 'L.f': 03m:36s
+selectCodeEditor("DM.v", 115, 32); // ac (DM.v)
+// Elapsed Time for: 'L.f': 03m:38s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ALU (ALU.v)]", 4, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ALU (ALU.v)]", 4, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectCodeEditor("ALU.v", 31, 60); // ac (ALU.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("ALU.v", 74, 41); // ac (ALU.v)
+// Elapsed Time for: 'L.f': 03m:42s
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), registers_bank_1 : RegistersBank (RegistersBank.v)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// TclEventType: DG_GRAPH_STALE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), im_1 : IM (IM.v)]", 2, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), im_1 : IM (IM.v)]", 2, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// Elapsed Time for: 'L.f': 03m:44s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), registers_bank_1 : RegistersBank (RegistersBank.v)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), registers_bank_1 : RegistersBank (RegistersBank.v)]", 3, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectCodeEditor("RegistersBank.v", 158, 39); // ac (RegistersBank.v)
+// Elapsed Time for: 'L.f': 03m:46s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), im_1 : IM (IM.v)]", 2, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), im_1 : IM (IM.v)]", 2, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 1, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectCodeEditor("top.v", 52, 54); // ac (top.v)
+selectCodeEditor("top.v", 240, 41); // ac (top.v)
+selectCodeEditor("top.v", 206, 51); // ac (top.v)
+selectCodeEditor("top.v", 195, 28); // ac (top.v)
+selectCodeEditor("top.v", 194, 31); // ac (top.v)
+selectCodeEditor("top.v", 296, 36); // ac (top.v)
+selectCodeEditor("top.v", 133, 47); // ac (top.v)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), registers_bank_1 : RegistersBank (RegistersBank.v)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), registers_bank_1 : RegistersBank (RegistersBank.v)]", 3, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectCodeEditor("RegistersBank.v", 200, 121); // ac (RegistersBank.v)
+selectCodeEditor("RegistersBank.v", 370, 198); // ac (RegistersBank.v)
+// Elapsed time: 143 seconds
+selectCodeEditor("RegistersBank.v", 392, 309); // ac (RegistersBank.v)
+selectCodeEditor("RegistersBank.v", 286, 219); // ac (RegistersBank.v)
+selectCodeEditor("RegistersBank.v", 217, 169); // ac (RegistersBank.v)
+selectCodeEditor("RegistersBank.v", 143, 201); // ac (RegistersBank.v)
+selectCodeEditor("RegistersBank.v", 145, 184); // ac (RegistersBank.v)
+selectCodeEditor("RegistersBank.v", 214, 176); // ac (RegistersBank.v)
+selectCodeEditor("RegistersBank.v", 154, 289); // ac (RegistersBank.v)
+// Elapsed time: 451 seconds
+selectCodeEditor("RegistersBank.v", 263, 180); // ac (RegistersBank.v)
