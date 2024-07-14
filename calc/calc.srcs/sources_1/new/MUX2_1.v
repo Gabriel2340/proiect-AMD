@@ -6,7 +6,7 @@ module MUX2_1(
     sel,
     O
     );
-    parameter N = 16;
+    parameter N = 32;
 
     input [N-1:0] A;
     input [N-1:0] B;
