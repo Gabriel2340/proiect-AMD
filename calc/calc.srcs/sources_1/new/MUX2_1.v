@@ -1,6 +1,5 @@
 `timescale 1ns / 1ps
 
-
 module MUX2_1(
     A,
     B,
@@ -15,5 +14,4 @@ module MUX2_1(
     output O;
 
     assign O = (sel == 0) ? A : B;
-
 endmodule
