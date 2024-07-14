@@ -330,3 +330,144 @@ selectCodeEditor("RegistersBank.v", 214, 176); // ac (RegistersBank.v)
 selectCodeEditor("RegistersBank.v", 154, 289); // ac (RegistersBank.v)
 // Elapsed time: 451 seconds
 selectCodeEditor("RegistersBank.v", 263, 180); // ac (RegistersBank.v)
+// Elapsed time: 218 seconds
+selectCodeEditor("RegistersBank.v", 345, 361); // ac (RegistersBank.v)
+// Elapsed time: 22 seconds
+selectCodeEditor("RegistersBank.v", 400, 182); // ac (RegistersBank.v)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Memory File]", 9); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Memory File]", 9); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectCodeEditor("RegistersBank.v", 309, 222); // ac (RegistersBank.v)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel", "Launch Runs"); // a (RDIResource.BaseDialog_CANCEL)
+dismissDialog("Launch Runs"); // f (dialog0)
+selectCodeEditor("RegistersBank.v", 411, 218); // ac (RegistersBank.v)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // ah (PAResourceItoN.MainMenuMgr_WINDOW, Window)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // ah (PAResourceItoN.MainMenuMgr_WINDOW, Window)
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // ah (RDIResource.MainWinMenuMgr_LAYOUT, Layout)
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // ah (RDIResource.MainWinMenuMgr_LAYOUT, Layout)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // ah (PAResourceItoN.MainMenuMgr_WINDOW, Window)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // ah (PAResourceItoN.MainMenuMgr_WINDOW, Window)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ah (PAResourceItoN.MainMenuMgr_REPORTS, Reports)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ah (PAResourceItoN.MainMenuMgr_REPORTS, Reports)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // ah (PAResourceItoN.MainMenuMgr_WINDOW, Window)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // ah (PAResourceItoN.MainMenuMgr_WINDOW, Window)
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // ah (RDIResource.MainWinMenuMgr_LAYOUT, Layout)
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // ah (RDIResource.MainWinMenuMgr_LAYOUT, Layout)
+selectMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // ah (PAResourceItoN.MainMenuMgr_VIEW, View)
+dismissMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // ah (PAResourceItoN.MainMenuMgr_VIEW, View)
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // ah (RDIResource.MainWinMenuMgr_LAYOUT, Layout)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ah (PAResourceItoN.MainMenuMgr_REPORTS, Reports)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ah (PAResourceItoN.MainMenuMgr_REPORTS, Reports)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ah (PAResourceItoN.MainMenuMgr_TOOLS, Tools)
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Custom Commands"); // am (RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, Custom Commands)
+selectMenuItem(RDIResourceCommand.RDICommands_SETTINGS, "Settings..."); // ap (RDIResourceCommand.RDICommands_SETTINGS, settings_menu)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ah (PAResourceItoN.MainMenuMgr_TOOLS, Tools)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// Tcl (Dont Echo) Command: 'rdi::info_commands {device::*}'
+// Tcl (Dont Echo) Command: 'rdi::info_commands {debug::*}'
+// Tcl (Dont Echo) Command: 'rdi::info_commands {*}'
+// WARNING: HEventQueue.dispatchEvent() is taking  2524 ms.
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, Synthesis]", 3, false); // s (PAResourceQtoS.SettingsDialog_PROJECT_TREE, Project Tree)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,244 MB. GUI used memory: 102 MB. Current time: 7/14/24, 2:16:58 PM EEST
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Display]", 4, false); // s (PAResourceQtoS.SettingsDialog_OPTIONS_TREE, Options Tree)
+dismissDialog("Settings"); // d (dialog1)
+// [Engine Memory]: 1,244 MB (+18363kb) [00:19:52]
+// Elapsed time: 38 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // ah (PAResourceItoN.MainMenuMgr_FLOW, Flow)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // ah (PAResourceItoN.MainMenuMgr_FLOW, Flow)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ah (PAResourceItoN.MainMenuMgr_TOOLS, Tools)
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Custom Commands"); // am (RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, Custom Commands)
+selectMenuItem(RDIResourceCommand.RDICommands_SETTINGS, "Settings..."); // ap (RDIResourceCommand.RDICommands_SETTINGS, settings_menu)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ah (PAResourceItoN.MainMenuMgr_TOOLS, Tools)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// [GUI Memory]: 221 MB (+60124kb) [00:20:31]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,286 MB. GUI used memory: 101 MB. Current time: 7/14/24, 2:17:49 PM EEST
+// Elapsed time: 16 seconds
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Project]", 0, false); // s (PAResourceQtoS.SettingsDialog_OPTIONS_TREE, Options Tree)
+dismissDialog("Settings"); // d (dialog1)
+selectCodeEditor("RegistersBank.v", 224, 223); // ac (RegistersBank.v)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.v", 7); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // J (PAResourceOtoP.PAViews_CODE, PlanAheadTabCode)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DM (DM.v)]", 5, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DM (DM.v)]", 5, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), im_1 : IM (IM.v)]", 2, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), im_1 : IM (IM.v)]", 2, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// Elapsed time: 13 seconds
+selectCodeEditor("IM.v", 127, 346); // ac (IM.v)
+selectCodeEditor("IM.v", 211, 193); // ac (IM.v)
+selectCodeEditor("IM.v", 212, 193, false, false, false, false, true); // ac (IM.v) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 21m:17s
+// Elapsed Time for: 'L.f': 21m:19s
+// Elapsed time: 48 seconds
+selectCodeEditor("IM.v", 237, 189); // ac (IM.v)
+selectCodeEditor("IM.v", 147, 211); // ac (IM.v)
+// Elapsed time: 18 seconds
+selectCodeEditor("IM.v", 302, 281); // ac (IM.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 22m:15s
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Elapsed Time for: 'L.f': 22m:17s
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error ERROR: [Common 17-180] Spawn failed: No error 
+// Elapsed Time for: 'L.f': 22m:19s
+selectCodeEditor("IM.v", 167, 416); // ac (IM.v)
+selectCodeEditor("IM.v", 172, 415); // ac (IM.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 22m:41s
+// Elapsed time: 21 seconds
+selectCodeEditor("IM.v", 206, 162); // ac (IM.v)
+selectCodeEditor("IM.v", 206, 162, false, false, false, false, true); // ac (IM.v) - Double Click
+// Elapsed Time for: 'L.f': 22m:43s
+selectCodeEditor("IM.v", 417, 413); // ac (IM.v)
+selectCodeEditor("IM.v", 200, 421); // ac (IM.v)
+selectCodeEditor("IM.v", 200, 421, false, false, false, false, true); // ac (IM.v) - Double Click
+selectCodeEditor("IM.v", 298, 231); // ac (IM.v)
+selectCodeEditor("IM.v", 809, 425); // ac (IM.v)
+selectCodeEditor("IM.v", 801, 408); // ac (IM.v)
+// Elapsed time: 16 seconds
+selectCodeEditor("IM.v", 155, 23); // ac (IM.v)
+selectCodeEditor("IM.v", 152, 38); // ac (IM.v)
+// Elapsed time: 31 seconds
+selectCodeEditor("IM.v", 258, 425); // ac (IM.v)
+selectCodeEditor("IM.v", 262, 416); // ac (IM.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 23m:57s
+selectCodeEditor("IM.v", 299, 84); // ac (IM.v)
+// Elapsed Time for: 'L.f': 23m:59s
+selectCodeEditor("IM.v", 201, 56); // ac (IM.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("IM.v", 505, 213); // ac (IM.v)
+// Elapsed Time for: 'L.f': 24m:01s
+// Elapsed Time for: 'L.f': 24m:03s
+// Elapsed time: 13 seconds
+selectCodeEditor("IM.v", 595, 328); // ac (IM.v)
+selectCodeEditor("IM.v", 501, 315); // ac (IM.v)
+// Elapsed time: 38 seconds
+selectCodeEditor("IM.v", 277, 452); // ac (IM.v)
+selectCodeEditor("IM.v", 289, 438); // ac (IM.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 24m:59s
+// Elapsed Time for: 'L.f': 25m:01s
+// Elapsed time: 34 seconds
+selectCodeEditor("IM.v", 818, 404); // ac (IM.v)
+selectCodeEditor("IM.v", 169, 425); // ac (IM.v)
+// Elapsed time: 25 seconds
+selectCodeEditor("IM.v", 480, 299); // ac (IM.v)
+// Elapsed time: 130 seconds
+selectCodeEditor("IM.v", 1112, 140); // ac (IM.v)
+selectCodeEditor("IM.v", 447, 209); // ac (IM.v)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // J (PAResourceOtoP.PAViews_CODE, PlanAheadTabCode)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), registers_bank_1 : RegistersBank (RegistersBank.v)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), registers_bank_1 : RegistersBank (RegistersBank.v)]", 3, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectCodeEditor("RegistersBank.v", 264, 216); // ac (RegistersBank.v)
+selectCodeEditor("RegistersBank.v", 305, 75); // ac (RegistersBank.v)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // J (PAResourceOtoP.PAViews_CODE, PlanAheadTabCode)
+selectCodeEditor("ALU.v", 473, 153); // ac (ALU.v)
+selectCodeEditor("ALU.v", 388, 193); // ac (ALU.v)
