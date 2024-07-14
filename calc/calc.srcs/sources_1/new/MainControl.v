@@ -15,6 +15,7 @@ module MainControl(op, din, ZERO, REGDST, REGWRITE,
     output reg MEM2REG;
     
     always @(*) begin
+        // Rtype
         case(op)
             6'b100000 : begin
                 REGDST = 0;
