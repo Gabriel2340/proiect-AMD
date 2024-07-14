@@ -16,7 +16,7 @@ module IM(
     end
     
     always @(*) begin
-        instr = {mem[adr + 3], mem[adr + 2], mem[adr + 1], mem[adr]};
+        instr = {mem[adr], mem[adr + 1], mem[adr + 2], mem[adr + 3]};
     end
     
 endmodule

@@ -12,12 +12,16 @@ module DM(
     input clk;
     input MEMWRITE;
     output wire [31:0] RD;
-    reg [31:0] mem [99:0];
+    reg [7:0] mem [399:0];
     
-    assign RD = mem[adr];
+    assign RD = {mem[adr], mem[adr + 1], mem[adr + 2], mem[adr + 3]};
 
     always @(posedge clk) begin
-        if (MEMWRITE)
-            mem[adr] = WD;
+        if (MEMWRITE) begin
+            mem[adr] = WD[31:24];
+            mem[adr + 1] = WD[23:16];
+            mem[adr + 2] = WD[15:8];
+            mem[adr + 3] = WD[7:0];
+        end
     end
 endmodule
