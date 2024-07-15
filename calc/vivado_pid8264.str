@@ -145,3 +145,16 @@ Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // [Engine Memory]: 1,104 MB (+1006447kb) [00:00:27]
 // [GUI Memory]: 147 MB (+32984kb) [00:00:28]
 // WARNING: HEventQueue.dispatchEvent() is taking  4380 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'. 
+// Project name: calc; location: C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc; part: xc7z007sclg400-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 1502.375 ; gain = 417.254 
+dismissDialog("Open Project"); // bj (Open Project Progress)
+// [Engine Memory]: 1,160 MB (+584kb) [00:00:34]
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (top.v) elapsed time: 0.3s
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), pc_1 : PC (PC.v)]", 2, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,174 MB. GUI used memory: 75 MB. Current time: 7/15/24, 6:54:11 PM EEST
+selectCodeEditor("top.v", 306, 272); // ac (top.v)
