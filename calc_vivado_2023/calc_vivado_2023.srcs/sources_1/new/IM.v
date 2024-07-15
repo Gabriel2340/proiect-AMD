@@ -12,7 +12,7 @@ module IM(
     reg [7:0] mem [399:0];
     
     initial begin
-        $readmemh("instr.mem", mem);
+        $readmemb("instr.mem", mem);
     end
     
     always @(*) begin
