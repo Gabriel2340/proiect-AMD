@@ -74,7 +74,7 @@ module MainControl(op, din, ZERO, REGDST, REGWRITE,
                     ALUSRC = 1;
                     ALUOP = 4'b0010;
                     REGWRITE = 1;
-                    MEMWRITE = 1;
+                    MEMWRITE = 0;
                     MEM2REG = 1;
                 end
                 6'b011001 : begin // LHI

@@ -4,7 +4,7 @@ module top(
     clk
     );
     input clk;
-    
+
     wire [31:0] instr;
     wire [31:0] pc_din;
     wire [31:0] pc_dout;
@@ -39,7 +39,6 @@ module top(
     ALU alu_1(.D1(RD1), .D2(ALU_B), .sel(ALUOP), .ZERO(ZERO), .Dout(ALU_out));
     DM dm_1(.adr(ALU_out), .WD(RD2), .clk(clk), .MEMWRITE(MEMWRITE), .RD(RD));
     MUX2_1 mux_2_1_mem(.A(RD), .B(ALU_out), .sel(MEM2REG), .O(mem2reg_out));
-    
 endmodule
 
 

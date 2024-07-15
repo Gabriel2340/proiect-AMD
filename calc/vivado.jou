@@ -12,3 +12,11 @@
 # Running On: amd-training-3, OS: Windows, CPU Frequency: 2096 MHz, CPU Physical cores: 12, Host memory: 33664 MB
 #-----------------------------------------------------------
 start_gui
+open_project C:/Users/training/calc2/proiect-AMD/calc/calc.xpr
+update_compile_order -fileset sources_1
+save_project_as calc_vivado_2023 C:/Users/training/calc2/proiect-AMD/calc_vivado_2023 -force
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
