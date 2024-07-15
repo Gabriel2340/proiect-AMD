@@ -18,10 +18,10 @@ module DM(
 
     always @(posedge clk) begin
         if (MEMWRITE) begin
-            mem[adr] = WD[31:24];
-            mem[adr + 1] = WD[23:16];
-            mem[adr + 2] = WD[15:8];
-            mem[adr + 3] = WD[7:0];
+            mem[adr] <= WD[31:24];
+            mem[adr + 1] <= WD[23:16];
+            mem[adr + 2] <= WD[15:8];
+            mem[adr + 3] <= WD[7:0];
         end
     end
 endmodule
