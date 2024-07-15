@@ -2,12 +2,14 @@
 
 module AddALU(
     A,
+    clk,
     O
     );
     input [31:0] A;
-    output reg [31:0] O;
+    input clk;
+    output reg [31:0] O = 0;
     
-    always @(*) begin
+    always @(posedge clk) begin
         O = A + 4;
     end
 endmodule
