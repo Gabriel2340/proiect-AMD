@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-
+// TODO: rezolva RD1 si RD2, se updateaza cu un clock dupa
 module top(
     clk
     );
@@ -13,7 +13,7 @@ module top(
     wire REGWRITE;
     wire EXTOP;
     wire ALUSRC;
-    wire ALUOP;
+    wire [3:0] ALUOP;
     wire MEMWRITE;
     wire MEM2REG;
     wire [31:0] ext_dout;
@@ -23,11 +23,11 @@ module top(
     wire [31:0] ALU_out;
     wire [31:0] RD;
     wire [31:0] mem2reg_out;
-    wire [31:0] dst_out;
+    wire [4:0] dst_out;
     
     PC pc_1(.din(pc_din), .clk(clk), .dout(pc_dout));
-    AddALU add_alu(.A(pc_out), .O(pc_din));
     IM im_1(.adr(pc_dout), .instr(instr));
+    AddALU add_alu(.A(pc_dout), .clk(clk), .O(pc_din));
     MainControl main_control_1(.op(instr[31:26]), .din(instr[5:0]), .ZERO(ZERO),
                 .REGDST(REGDST), .REGWRITE(REGWRITE), .EXTOP(EXTOP), .ALUSRC(ALUSRC),
                 .ALUOP(ALUOP), .MEMWRITE(MEMWRITE), .MEM2REG(MEM2REG));
@@ -47,9 +47,11 @@ module tb;
     
     initial begin
         clk = 0;
-        repeat(50) begin
+        repeat(19) begin
             #10 clk = !clk;
         end
         #10 $finish;
     end
+    
+    top top_1(.clk(clk));
 endmodule
