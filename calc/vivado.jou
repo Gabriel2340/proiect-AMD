@@ -24,3 +24,23 @@
 start_gui
 open_project {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/calc.xpr}
 update_compile_order -fileset sources_1
+close [ open {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/calc.srcs/sources_1/new/PC.v} w ]
+add_files {{C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/calc.srcs/sources_1/new/PC.v}}
+update_compile_order -fileset sources_1
+close [ open {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/calc.srcs/sources_1/new/AddALU.v} w ]
+add_files {{C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/calc.srcs/sources_1/new/AddALU.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
