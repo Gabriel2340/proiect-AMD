@@ -2,9 +2,11 @@
 
 module AddALU(
     A,
+    B,
     O
     );
     input [31:0] A;
+    input [31:0] B;
     output wire [31:0] O;
-    assign O = A + 4;
+    assign O = A + B;
 endmodule
