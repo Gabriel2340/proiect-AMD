@@ -9,10 +9,10 @@ module IM(
     input [31:0] adr;
     output reg [31:0] instr;
     
-    reg [7:0] mem [399:0];
+    reg [7:0] mem [100:0];
     
     initial begin
-        $readmemh("instr.mem", mem);
+        $readmemb("instr.mem", mem);
     end
     
     always @(*) begin

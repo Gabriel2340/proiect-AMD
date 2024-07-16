@@ -11,7 +11,7 @@ module MUX2_1(
     input [N-1:0] A;
     input [N-1:0] B;
     input sel;
-    output O;
+    output [N-1:0] O;
 
-    assign O = (sel == 0) ? A : B;
+    assign O = (sel) ? B : A;
 endmodule

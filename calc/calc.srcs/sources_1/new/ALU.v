@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-// test
+
 module ALU(
     D1,
     D2,
@@ -15,17 +15,17 @@ module ALU(
     
     always @(*) begin
         case(sel)
-            0: Dout = D1 & D2;
-            1: Dout = D1 | D2;
-            2: Dout = D1 + D2;
-            6: Dout = D1 - D2;
-            7: Dout = (D1 < D2) ? 1:0;
-            12: Dout = ~(D1 | D2);
+            0: Dout <= D1 & D2;
+            1: Dout <= D1 | D2;
+            2: Dout <= D1 + D2;
+            6: Dout <= D1 - D2;
+            7: Dout <= (D1 < D2) ? 1:0;
+            12: Dout <= ~(D1 | D2);
         endcase
         if (Dout == 0)
-            ZERO = 1;
+            ZERO <= 1;
         else
-            ZERO = 0;
+            ZERO <= 0;
     end
     
 endmodule
