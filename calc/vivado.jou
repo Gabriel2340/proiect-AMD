@@ -20,3 +20,11 @@ source top.tcl
 close_sim
 launch_simulation
 source top.tcl
+close_sim
+launch_simulation
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
