@@ -27,10 +27,11 @@ module RegistersBank(
             registers[i] = 0;
         end
     end
-    
-    always @(posedge clk) begin
+    always @(negedge clk) begin
         RD1 <= registers[RA1];
         RD2 <= registers[RA2];
+    end
+    always @(posedge clk) begin
         if (REGWRITE) begin // poate trebuie schimbat pe negedge
             registers[WA] <= WD;
         end

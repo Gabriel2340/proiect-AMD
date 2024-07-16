@@ -20,6 +20,9 @@ module ALU(
             2: Dout <= D1 + D2;
             6: Dout <= D1 - D2;
             7: Dout <= (D1 < D2) ? 1:0;
+            8: Dout <= (D1[31] < D2[31]) ? 1 : (D1[31] > D2[31]) ? 0: (D1[30:0] < D2[30:0]) ? 1:0;
+            9: Dout <= D1 << D2;
+            10: Dout <= D1 >> D2;
             12: Dout <= ~(D1 | D2);
         endcase
         if (Dout == 0)

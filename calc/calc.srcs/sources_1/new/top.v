@@ -27,7 +27,7 @@ module top(
     
     PC pc_1(.din(pc_din), .clk(clk), .dout(pc_dout));
     IM im_1(.adr(pc_dout), .instr(instr));
-    AddALU add_alu(.A(pc_dout), .clk(clk), .O(pc_din));
+    AddALU add_alu(.A(pc_dout), .O(pc_din));
     MainControl main_control_1(.op(instr[31:26]), .din(instr[5:0]), .ZERO(ZERO),
                 .REGDST(REGDST), .REGWRITE(REGWRITE), .EXTOP(EXTOP), .ALUSRC(ALUSRC),
                 .ALUOP(ALUOP), .MEMWRITE(MEMWRITE), .MEM2REG(MEM2REG));
