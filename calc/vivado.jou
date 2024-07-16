@@ -370,3 +370,4 @@ launch_simulation
 open_wave_config {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/tb_behav.wcfg}
 source tb.tcl
 save_wave_config {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/tb_behav.wcfg}
+close_sim
