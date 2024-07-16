@@ -18,7 +18,7 @@ module MainControl(op, din, ZERO, REGDST, REGWRITE,
         // Rtype
         if (op == 0) begin
             case(din)
-                6'b100000 : begin // ADD
+                6'h20 : begin // ADD
                     REGWRITE <= 1;
                     MEMWRITE <= 0;
                     MEM2REG <= 1;
@@ -27,7 +27,16 @@ module MainControl(op, din, ZERO, REGDST, REGWRITE,
                     EXTOP <= 0;
                     ALUSRC <= 0;
                 end
-                6'b100010 : begin // SUB
+                6'h21 : begin // ADDU
+                    REGWRITE <= 1;
+                    MEMWRITE <= 0;
+                    MEM2REG <= 1;
+                    REGDST <= 1;
+                    ALUOP <= 4'b0010;
+                    EXTOP <= 0;
+                    ALUSRC <= 0;
+                end
+                6'h22 : begin // SUB
                     REGWRITE <= 1;
                     MEMWRITE <= 0;
                     MEM2REG <= 1;
@@ -36,7 +45,7 @@ module MainControl(op, din, ZERO, REGDST, REGWRITE,
                     EXTOP <= 0;
                     ALUSRC <= 0;
                 end
-                6'b100100 : begin // AND
+                6'h24 : begin // AND
                     REGWRITE <= 1;
                     MEMWRITE <= 0;
                     MEM2REG <= 1;
@@ -45,21 +54,39 @@ module MainControl(op, din, ZERO, REGDST, REGWRITE,
                     EXTOP <= 0;
                     ALUSRC <= 0;
                 end
-                6'b100101 : begin // OR
+                6'h25 : begin // OR
                     REGWRITE <= 1;
                     MEMWRITE <= 0;
                     MEM2REG <= 1;
                     REGDST <= 1;
-                    ALUOP <= 4'b0010;
+                    ALUOP <= 4'b0001;
                     EXTOP <= 0;
                     ALUSRC <= 0;
                 end
-                6'b101010 : begin // SLT
+                6'h27 : begin // NOR
+                    REGWRITE <= 1;
+                    MEMWRITE <= 0;
+                    MEM2REG <= 1;
+                    REGDST <= 1;
+                    ALUOP <= 4'b1100;
+                    EXTOP <= 0;
+                    ALUSRC <= 0;
+                end
+                6'h2a : begin // SLT
                     REGWRITE <= 1;
                     MEMWRITE <= 0;
                     MEM2REG <= 1;
                     REGDST <= 1;
                     ALUOP <= 4'b0111;
+                    EXTOP <= 0;
+                    ALUSRC <= 0;
+                end
+                6'h2b : begin // SLTU
+                    REGWRITE <= 1;
+                    MEMWRITE <= 0;
+                    MEM2REG <= 1;
+                    REGDST <= 1;
+                    ALUOP <= 4'b1000;
                     EXTOP <= 0;
                     ALUSRC <= 0;
                 end
