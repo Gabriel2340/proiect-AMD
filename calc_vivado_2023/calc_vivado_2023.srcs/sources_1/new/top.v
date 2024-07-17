@@ -33,8 +33,9 @@ module top(
     wire JUMP;
     wire BRANCH;
     wire B_0;
+    wire ZERO_CNTRL;
     
-    assign B_0 = BRANCH & ZERO;
+    assign B_0 = BRANCH & ZERO_CNTRL;
     
     PC pc_1(.din(pc_din), .clk(clk), .dout(pc_dout));
     IM im_1(.adr(pc_dout), .instr(instr));
@@ -44,7 +45,8 @@ module top(
     MUX2_1 mux2_1_pc_in(.A(mux2_1_adds_out), .B({add_alu_1_out[31:28],instr[25:0],2'b00}), .sel(JUMP), .O(pc_din));
     MainControl main_control_1(.op(instr[31:26]), .din(instr[5:0]), .ZERO(ZERO), .REGDST(REGDST),
                 .REGWRITE(REGWRITE), .EXTOP(EXTOP), .ALUSRC(ALUSRC), .ALUOP(ALUOP),
-                .MEMWRITE(MEMWRITE), .MEM2REG(MEM2REG), .SHAMT(SHAMT), .JUMP(JUMP), .BRANCH(BRANCH));
+                .MEMWRITE(MEMWRITE), .MEM2REG(MEM2REG), .SHAMT(SHAMT), .JUMP(JUMP), .BRANCH(BRANCH),
+                .ZERO_CNTRL(ZERO_CNTRL));
     ExtSign ext_sign_1(.din(instr[15:0]), .EXTOP(EXTOP), .dout(ext_dout));
     MUX2_1 mux2_1_sh(.A(ext_dout), .B({{27{1'b0}}, instr[10:6]}), .sel(SHAMT), .O(sh_out));
     MUX2_1 #(.N(5)) mux2_1_dst(.A(instr[20:16]), .B(instr[15:11]), .sel(REGDST), .O(dst_out));
@@ -62,7 +64,7 @@ module tb;
     
     initial begin
         clk = 0;
-        repeat(19) begin
+        repeat(39) begin
             #10 clk = !clk;
         end
         #10 $finish;

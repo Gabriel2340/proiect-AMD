@@ -7,15 +7,24 @@ module DM(
     MEMWRITE,
     RD
     );
+    integer i;
+    parameter MAX_MEM = 32'hffff;
     input [31:0] adr;
     input [31:0] WD;
     input clk;
     input MEMWRITE;
     output wire [31:0] RD;
-    reg [7:0] mem [399:0];
+    reg [7:0] mem [MAX_MEM-1:0];
     
     assign RD = {mem[adr], mem[adr + 1], mem[adr + 2], mem[adr + 3]};
-
+    
+    initial begin
+        for (i = 0; i < MAX_MEM; i = i + 1) begin
+            mem[i] = 0;
+        end
+    end
+    
+    
     always @(posedge clk) begin
         if (MEMWRITE) begin
             mem[adr] <= WD[31:24];
