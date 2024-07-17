@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 
 module MainControl(op, din, ZERO, REGDST, REGWRITE,
-    EXTOP, ALUSRC, ALUOP, MEMWRITE, MEM2REG, SHAMT, JUMP, BRANCH
+    EXTOP, ALUSRC, ALUOP, MEMWRITE, MEM2REG, SHAMT, JUMP, BRANCH, ZERO_CNTRL
     );
     input [5:0] op;
     input [5:0] din;
@@ -16,6 +16,7 @@ module MainControl(op, din, ZERO, REGDST, REGWRITE,
     output reg SHAMT;
     output reg JUMP;
     output reg BRANCH;
+    output reg ZERO_CNTRL;
     
     always @(*) begin
         // Rtype
@@ -32,6 +33,7 @@ module MainControl(op, din, ZERO, REGDST, REGWRITE,
                     SHAMT <= 1;
                     JUMP <= 0;
                     BRANCH <= 0;
+                    ZERO_CNTRL <= ZERO;
                 end
                 6'h02 : begin // SRL
                     REGWRITE <= 1;
@@ -44,6 +46,7 @@ module MainControl(op, din, ZERO, REGDST, REGWRITE,
                     SHAMT <= 1;
                     JUMP <= 0;
                     BRANCH <= 0;
+                    ZERO_CNTRL <= ZERO;
                 end
                 6'h08 : begin // JR nu e gata
                     REGWRITE <= 0;
@@ -56,6 +59,7 @@ module MainControl(op, din, ZERO, REGDST, REGWRITE,
                     SHAMT <= 0;
                     JUMP <= 1;
                     BRANCH <= 0;
+                    ZERO_CNTRL <= ZERO;
                 end
                 6'h20 : begin // ADD
                     REGWRITE <= 1;
@@ -68,6 +72,7 @@ module MainControl(op, din, ZERO, REGDST, REGWRITE,
                     SHAMT <= 0;
                     JUMP <= 0;
                     BRANCH <= 0;
+                    ZERO_CNTRL <= ZERO;
                 end
                 6'h21 : begin // ADDU = ADD
                     REGWRITE <= 1;
@@ -80,6 +85,7 @@ module MainControl(op, din, ZERO, REGDST, REGWRITE,
                     SHAMT <= 0;
                     JUMP <= 0;
                     BRANCH <= 0;
+                    ZERO_CNTRL <= ZERO;
                 end
                 6'h22 : begin // SUB
                     REGWRITE <= 1;
@@ -92,6 +98,7 @@ module MainControl(op, din, ZERO, REGDST, REGWRITE,
                     SHAMT <= 0;
                     JUMP <= 0;
                     BRANCH <= 0;
+                    ZERO_CNTRL <= ZERO;
                 end
                 6'h23 : begin // SUBU = SUB
                     REGWRITE <= 1;
@@ -104,6 +111,7 @@ module MainControl(op, din, ZERO, REGDST, REGWRITE,
                     SHAMT <= 0;
                     JUMP <= 0;
                     BRANCH <= 0;
+                    ZERO_CNTRL <= ZERO;
                 end
                 6'h24 : begin // AND
                     REGWRITE <= 1;
@@ -116,6 +124,7 @@ module MainControl(op, din, ZERO, REGDST, REGWRITE,
                     SHAMT <= 0;
                     JUMP <= 0;
                     BRANCH <= 0;
+                    ZERO_CNTRL <= ZERO;
                 end
                 6'h25 : begin // OR
                     REGWRITE <= 1;
@@ -128,6 +137,7 @@ module MainControl(op, din, ZERO, REGDST, REGWRITE,
                     SHAMT <= 0;
                     JUMP <= 0;
                     BRANCH <= 0;
+                    ZERO_CNTRL <= ZERO;
                 end
                 6'h27 : begin // NOR
                     REGWRITE <= 1;
@@ -140,6 +150,7 @@ module MainControl(op, din, ZERO, REGDST, REGWRITE,
                     SHAMT <= 0;
                     JUMP <= 0;
                     BRANCH <= 0;
+                    ZERO_CNTRL <= ZERO;
                 end
                 6'h2a : begin // SLT
                     REGWRITE <= 1;
@@ -152,6 +163,7 @@ module MainControl(op, din, ZERO, REGDST, REGWRITE,
                     SHAMT <= 0;
                     JUMP <= 0;
                     BRANCH <= 0;
+                    ZERO_CNTRL <= ZERO;
                 end
                 6'h2b : begin // SLTU
                     REGWRITE <= 1;
@@ -164,10 +176,11 @@ module MainControl(op, din, ZERO, REGDST, REGWRITE,
                     SHAMT <= 0;
                     JUMP <= 0;
                     BRANCH <= 0;
+                    ZERO_CNTRL <= ZERO;
                 end
             endcase
         end else begin //Itype
-            case(op) // skipped: BNE, JAL, LBU, LHU, LL, LUI, SLTI, SLTIU, SB, SC, SH
+            case(op) // skipped: JAL, LBU, LHU, LL, LUI, SLTI, SLTIU, SB, SC, SH
                 6'h02 : begin // J
                     REGDST <= 0;
                     EXTOP <= 0;
@@ -179,6 +192,20 @@ module MainControl(op, din, ZERO, REGDST, REGWRITE,
                     SHAMT <= 0;
                     JUMP <= 1;
                     BRANCH <= 0;
+                    ZERO_CNTRL <= ZERO;
+                end
+                6'h02 : begin // JAL
+                    REGDST <= 0;
+                    EXTOP <= 0;
+                    ALUSRC <= 0;
+                    ALUOP <= 4'b0000;
+                    REGWRITE <= 0;
+                    MEMWRITE <= 0;
+                    MEM2REG <= 1;
+                    SHAMT <= 0;
+                    JUMP <= 1;
+                    BRANCH <= 0;
+                    ZERO_CNTRL <= ZERO;
                 end
                 6'h04 : begin // BEQ
                     REGDST <= 0;
@@ -191,6 +218,20 @@ module MainControl(op, din, ZERO, REGDST, REGWRITE,
                     SHAMT <= 0;
                     JUMP <= 0;
                     BRANCH <= 1;
+                    ZERO_CNTRL <= ZERO;
+                end
+                6'h05 : begin // BNE
+                    REGDST <= 0;
+                    EXTOP <= 1;
+                    ALUSRC <= 0;
+                    ALUOP <= 4'b0110;
+                    REGWRITE <= 0;
+                    MEMWRITE <= 0;
+                    MEM2REG <= 1;
+                    SHAMT <= 0;
+                    JUMP <= 0;
+                    BRANCH <= 1;
+                    ZERO_CNTRL <= !ZERO;
                 end
                 6'h08 : begin // ADDI
                     REGDST <= 0;
@@ -203,6 +244,7 @@ module MainControl(op, din, ZERO, REGDST, REGWRITE,
                     SHAMT <= 0;
                     JUMP <= 0;
                     BRANCH <= 0;
+                    ZERO_CNTRL <= ZERO;
                 end
                 6'h09 : begin // ADDIU = ADDI
                     REGDST <= 0;
@@ -215,6 +257,7 @@ module MainControl(op, din, ZERO, REGDST, REGWRITE,
                     SHAMT <= 0;
                     JUMP <= 0;
                     BRANCH <= 0;
+                    ZERO_CNTRL <= ZERO;
                 end
                 6'h0c : begin // ANDI
                     REGDST <= 0;
@@ -227,6 +270,7 @@ module MainControl(op, din, ZERO, REGDST, REGWRITE,
                     SHAMT <= 0;
                     JUMP <= 0;
                     BRANCH <= 0;
+                    ZERO_CNTRL <= ZERO;
                 end
                 6'h0d : begin // ORI
                     REGDST <= 0;
@@ -239,6 +283,7 @@ module MainControl(op, din, ZERO, REGDST, REGWRITE,
                     SHAMT <= 0;
                     JUMP <= 0;
                     BRANCH <= 0;
+                    ZERO_CNTRL <= ZERO;
                 end
                 6'h23 : begin // LW
                     REGDST <= 0;
@@ -251,6 +296,7 @@ module MainControl(op, din, ZERO, REGDST, REGWRITE,
                     SHAMT <= 0;
                     JUMP <= 0;
                     BRANCH <= 0;
+                    ZERO_CNTRL <= ZERO;
                 end
                 6'h2b : begin // SW
                     REGDST <= 0;
@@ -263,6 +309,7 @@ module MainControl(op, din, ZERO, REGDST, REGWRITE,
                     SHAMT <= 0;
                     JUMP <= 0;
                     BRANCH <= 0;
+                    ZERO_CNTRL <= ZERO;
                 end
             endcase
         end
