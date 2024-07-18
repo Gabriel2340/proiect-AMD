@@ -2,10 +2,12 @@
 
 module DM(
     adr,
+    SWin,
     WD,
     clk,
     MEMWRITE,
-    RD
+    RD,
+    LEDout
     );
     integer i;
     parameter MAX_MEM = 32'hffff;
@@ -13,17 +15,13 @@ module DM(
     input [31:0] WD;
     input clk;
     input MEMWRITE;
+    input [15:0] SWin;
+    output [15:0] LEDout;
     output wire [31:0] RD;
     reg [7:0] mem [MAX_MEM-1:0];
     
     assign RD = {mem[adr], mem[adr + 1], mem[adr + 2], mem[adr + 3]};
-    
-    initial begin
-        for (i = 0; i < MAX_MEM; i = i + 1) begin
-            mem[i] = 0;
-        end
-    end
-    
+    assign LEDout = {mem[SWin], mem[SWin + 1]};
     
     always @(posedge clk) begin
         if (MEMWRITE) begin
