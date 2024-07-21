@@ -3,10 +3,10 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Tue Jul 16 17:00:35 2024
-# Process ID: 12156
+# Start of session at: Sun Jul 21 13:03:27 2024
+# Process ID: 11864
 # Current directory: C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10664 C:\Users\Gabi\Desktop\AMD\proiecte verilog\proiect-AMD\calc\calc.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6304 C:\Users\Gabi\Desktop\AMD\proiecte verilog\proiect-AMD\calc\calc.xpr
 # Log file: C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/vivado.log
 # Journal file: C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc\vivado.jou
 # Running On        :Gabi
@@ -17,9 +17,9 @@
 # CPU Physical cores:4
 # CPU Logical cores :8
 # Host memory       :16363 MB
-# Swap memory       :3221 MB
-# Total Virtual     :19584 MB
-# Available Virtual :10328 MB
+# Swap memory       :1073 MB
+# Total Virtual     :17437 MB
+# Available Virtual :12031 MB
 #-----------------------------------------------------------
 start_gui
 open_project {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/calc.xpr}
@@ -29,6 +29,149 @@ open_wave_config {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/tb
 source tb.tcl
 close_sim
 launch_simulation
+open_wave_config {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/tb_behav.wcfg}
+source tb.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/tb_behav.wcfg}
+source tb.tcl
+current_wave_config {tb_behav.wcfg}
+log_wave {/tb/top_1/dm_1/mem[83]} 
+current_wave_config {tb_behav.wcfg}
+add_wave {{/tb/top_1/dm_1/mem[83]}} 
+save_wave_config {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/tb_behav.wcfg}
+source tb.tcl
+current_wave_config {tb_behav.wcfg}
+add_wave {{/tb/top_1/dm_1/mem}} 
+save_wave_config {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/tb_behav.wcfg}
+save_wave_config {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/tb_behav.wcfg}
+source tb.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/tb_behav.wcfg}
+source tb.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/tb_behav.wcfg}
+source tb.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/tb_behav.wcfg}
+source tb.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/tb_behav.wcfg}
+source tb.tcl
+save_wave_config {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/tb_behav.wcfg}
+source tb.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/tb_behav.wcfg}
+source tb.tcl
+remove_forces { {/tb/top_1/registers_bank_1/registers[31]} {/tb/top_1/registers_bank_1/registers[30]} {/tb/top_1/registers_bank_1/registers[29]} {/tb/top_1/registers_bank_1/registers[28]} {/tb/top_1/registers_bank_1/registers[27]} {/tb/top_1/registers_bank_1/registers[26]} {/tb/top_1/registers_bank_1/registers[25]} {/tb/top_1/registers_bank_1/registers[24]} {/tb/top_1/registers_bank_1/registers[23]} {/tb/top_1/registers_bank_1/registers[22]} {/tb/top_1/registers_bank_1/registers[21]} {/tb/top_1/registers_bank_1/registers[20]} {/tb/top_1/registers_bank_1/registers[19]} {/tb/top_1/registers_bank_1/registers[18]} {/tb/top_1/registers_bank_1/registers[17]} {/tb/top_1/registers_bank_1/registers[16]} {/tb/top_1/registers_bank_1/registers[15]} {/tb/top_1/registers_bank_1/registers[14]} {/tb/top_1/registers_bank_1/registers[13]} {/tb/top_1/registers_bank_1/registers[12]} {/tb/top_1/registers_bank_1/registers[11]} {/tb/top_1/registers_bank_1/registers[10]} {/tb/top_1/registers_bank_1/registers[9]} {/tb/top_1/registers_bank_1/registers[8]} }
+remove_forces { {/tb/top_1/registers_bank_1/registers[31]} {/tb/top_1/registers_bank_1/registers[30]} {/tb/top_1/registers_bank_1/registers[29]} {/tb/top_1/registers_bank_1/registers[28]} {/tb/top_1/registers_bank_1/registers[27]} {/tb/top_1/registers_bank_1/registers[26]} {/tb/top_1/registers_bank_1/registers[25]} {/tb/top_1/registers_bank_1/registers[24]} {/tb/top_1/registers_bank_1/registers[23]} {/tb/top_1/registers_bank_1/registers[22]} {/tb/top_1/registers_bank_1/registers[21]} {/tb/top_1/registers_bank_1/registers[20]} {/tb/top_1/registers_bank_1/registers[19]} {/tb/top_1/registers_bank_1/registers[18]} {/tb/top_1/registers_bank_1/registers[17]} {/tb/top_1/registers_bank_1/registers[16]} {/tb/top_1/registers_bank_1/registers[15]} {/tb/top_1/registers_bank_1/registers[14]} {/tb/top_1/registers_bank_1/registers[13]} {/tb/top_1/registers_bank_1/registers[12]} {/tb/top_1/registers_bank_1/registers[11]} {/tb/top_1/registers_bank_1/registers[10]} {/tb/top_1/registers_bank_1/registers[9]} {/tb/top_1/registers_bank_1/registers[8]} }
+remove_forces { {/tb/top_1/registers_bank_1/registers[31]} {/tb/top_1/registers_bank_1/registers[30]} {/tb/top_1/registers_bank_1/registers[29]} {/tb/top_1/registers_bank_1/registers[28]} {/tb/top_1/registers_bank_1/registers[27]} {/tb/top_1/registers_bank_1/registers[26]} {/tb/top_1/registers_bank_1/registers[25]} {/tb/top_1/registers_bank_1/registers[24]} {/tb/top_1/registers_bank_1/registers[23]} {/tb/top_1/registers_bank_1/registers[22]} {/tb/top_1/registers_bank_1/registers[21]} {/tb/top_1/registers_bank_1/registers[20]} {/tb/top_1/registers_bank_1/registers[19]} {/tb/top_1/registers_bank_1/registers[18]} {/tb/top_1/registers_bank_1/registers[17]} {/tb/top_1/registers_bank_1/registers[16]} {/tb/top_1/registers_bank_1/registers[15]} {/tb/top_1/registers_bank_1/registers[14]} {/tb/top_1/registers_bank_1/registers[13]} {/tb/top_1/registers_bank_1/registers[12]} {/tb/top_1/registers_bank_1/registers[11]} {/tb/top_1/registers_bank_1/registers[10]} {/tb/top_1/registers_bank_1/registers[9]} {/tb/top_1/registers_bank_1/registers[8]} }
+remove_forces { {/tb/top_1/registers_bank_1/registers[31]} {/tb/top_1/registers_bank_1/registers[30]} {/tb/top_1/registers_bank_1/registers[29]} {/tb/top_1/registers_bank_1/registers[28]} {/tb/top_1/registers_bank_1/registers[27]} {/tb/top_1/registers_bank_1/registers[26]} {/tb/top_1/registers_bank_1/registers[25]} {/tb/top_1/registers_bank_1/registers[24]} {/tb/top_1/registers_bank_1/registers[23]} {/tb/top_1/registers_bank_1/registers[22]} {/tb/top_1/registers_bank_1/registers[21]} {/tb/top_1/registers_bank_1/registers[20]} {/tb/top_1/registers_bank_1/registers[19]} {/tb/top_1/registers_bank_1/registers[18]} {/tb/top_1/registers_bank_1/registers[17]} {/tb/top_1/registers_bank_1/registers[16]} {/tb/top_1/registers_bank_1/registers[15]} {/tb/top_1/registers_bank_1/registers[14]} {/tb/top_1/registers_bank_1/registers[13]} {/tb/top_1/registers_bank_1/registers[12]} {/tb/top_1/registers_bank_1/registers[11]} {/tb/top_1/registers_bank_1/registers[10]} {/tb/top_1/registers_bank_1/registers[9]} {/tb/top_1/registers_bank_1/registers[8]} }
+remove_forces { {/tb/top_1/registers_bank_1/registers[31]} {/tb/top_1/registers_bank_1/registers[30]} {/tb/top_1/registers_bank_1/registers[29]} {/tb/top_1/registers_bank_1/registers[28]} {/tb/top_1/registers_bank_1/registers[27]} {/tb/top_1/registers_bank_1/registers[26]} {/tb/top_1/registers_bank_1/registers[25]} {/tb/top_1/registers_bank_1/registers[24]} {/tb/top_1/registers_bank_1/registers[23]} {/tb/top_1/registers_bank_1/registers[22]} {/tb/top_1/registers_bank_1/registers[21]} {/tb/top_1/registers_bank_1/registers[20]} {/tb/top_1/registers_bank_1/registers[19]} {/tb/top_1/registers_bank_1/registers[18]} {/tb/top_1/registers_bank_1/registers[17]} {/tb/top_1/registers_bank_1/registers[16]} {/tb/top_1/registers_bank_1/registers[15]} {/tb/top_1/registers_bank_1/registers[14]} {/tb/top_1/registers_bank_1/registers[13]} {/tb/top_1/registers_bank_1/registers[12]} {/tb/top_1/registers_bank_1/registers[11]} {/tb/top_1/registers_bank_1/registers[10]} {/tb/top_1/registers_bank_1/registers[9]} {/tb/top_1/registers_bank_1/registers[8]} }
+save_wave_config {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/tb_behav.wcfg}
+source tb.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/tb_behav.wcfg}
+source tb.tcl
+current_wave_config {tb_behav.wcfg}
+add_wave {{/tb/top_1/alu_1/HI}} {{/tb/top_1/alu_1/LO}} 
+save_wave_config {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/tb_behav.wcfg}
+source tb.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/tb_behav.wcfg}
+source tb.tcl
+save_wave_config {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/tb_behav.wcfg}
+save_wave_config {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/tb_behav.wcfg}
+save_wave_config {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/tb_behav.wcfg}
+save_wave_config {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/tb_behav.wcfg}
+save_wave_config {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/tb_behav.wcfg}
+save_wave_config {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/tb_behav.wcfg}
+save_wave_config {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/tb_behav.wcfg}
+save_wave_config {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/tb_behav.wcfg}
+source tb.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/tb_behav.wcfg}
+source tb.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/tb_behav.wcfg}
+source tb.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/tb_behav.wcfg}
+source tb.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/tb_behav.wcfg}
+source tb.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/tb_behav.wcfg}
+source tb.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/tb_behav.wcfg}
+source tb.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/tb_behav.wcfg}
+source tb.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/tb_behav.wcfg}
+source tb.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/tb_behav.wcfg}
+source tb.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/tb_behav.wcfg}
+source tb.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/tb_behav.wcfg}
+source tb.tcl
+save_wave_config {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/tb_behav.wcfg}
+source tb.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/tb_behav.wcfg}
+source tb.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/tb_behav.wcfg}
+source tb.tcl
+close_sim
 launch_simulation
 open_wave_config {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/tb_behav.wcfg}
 source tb.tcl

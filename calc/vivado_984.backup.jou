@@ -1,0 +1,47 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Sat Jul 20 13:34:54 2024
+# Process ID: 984
+# Current directory: C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11620 C:\Users\Gabi\Desktop\AMD\proiecte verilog\proiect-AMD\calc\calc.xpr
+# Log file: C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/vivado.log
+# Journal file: C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc\vivado.jou
+# Running On        :Gabi
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :AMD Ryzen 5 7520U with Radeon Graphics         
+# CPU Frequency     :2795 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :16363 MB
+# Swap memory       :3221 MB
+# Total Virtual     :19584 MB
+# Available Virtual :10247 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/calc.xpr}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/calc.srcs/sources_1/new/divizor.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/calc.srcs/sources_1/new/divizor.v}}
+file delete -force {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/calc.srcs/sources_1/new/divizor.v}
+export_ip_user_files -of_objects  [get_files {{C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/calc.srcs/sources_1/new/dig_dec_top.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/calc.srcs/sources_1/new/dig_dec_top.v}}
+file delete -force {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/calc.srcs/sources_1/new/dig_dec_top.v}
+export_ip_user_files -of_objects  [get_files {{C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/calc.srcs/sources_1/new/dig_dec.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/calc.srcs/sources_1/new/dig_dec.v}}
+file delete -force {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/calc.srcs/sources_1/new/dig_dec.v}
+export_ip_user_files -of_objects  [get_files {{C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/calc.srcs/sources_1/new/dec.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/calc.srcs/sources_1/new/dec.v}}
+file delete -force {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/calc.srcs/sources_1/new/dec.v}
+export_ip_user_files -of_objects  [get_files {{C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/calc.srcs/sources_1/new/cnt.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/calc.srcs/sources_1/new/cnt.v}}
+file delete -force {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/calc.srcs/sources_1/new/cnt.v}
+launch_simulation
+open_wave_config {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/tb_behav.wcfg}
+source tb.tcl
+close_sim

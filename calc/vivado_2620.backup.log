@@ -3,10 +3,10 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Sun Jul 14 13:53:51 2024
-# Process ID: 18240
+# Start of session at: Sun Jul 21 00:13:23 2024
+# Process ID: 2620
 # Current directory: C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18524 C:\Users\Gabi\Desktop\AMD\proiecte verilog\proiect-AMD\calc\calc.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1688 C:\Users\Gabi\Desktop\AMD\proiecte verilog\proiect-AMD\calc\calc.xpr
 # Log file: C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/vivado.log
 # Journal file: C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc\vivado.jou
 # Running On        :Gabi
@@ -17,11 +17,12 @@
 # CPU Physical cores:4
 # CPU Logical cores :8
 # Host memory       :16363 MB
-# Swap memory       :3221 MB
-# Total Virtual     :19584 MB
-# Available Virtual :10351 MB
+# Swap memory       :1073 MB
+# Total Virtual     :17437 MB
+# Available Virtual :13194 MB
 #-----------------------------------------------------------
 start_gui
+open_project {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/calc.xpr}
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
@@ -83,17 +84,13 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 availab
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
-open_project {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/calc.xpr}
-INFO: [Project 1-313] Project file moved from 'C:/Users/training/calc' since last save.
 INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/calc.gen/sources_1'.
-WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/calc.ip_user_files'.
 Scanning sources...
 Finished scanning sources
-INFO: [Project 1-230] Project 'calc.xpr' upgraded for this version of Vivado.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
-open_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1312.012 ; gain = 48.777
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1499.406 ; gain = 392.891
 update_compile_order -fileset sources_1
 exit
-INFO: [Common 17-206] Exiting Vivado at Sun Jul 14 13:57:05 2024...
+INFO: [Common 17-206] Exiting Vivado at Sun Jul 21 01:17:12 2024...

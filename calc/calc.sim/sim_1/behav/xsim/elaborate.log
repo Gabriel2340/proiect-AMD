@@ -13,9 +13,9 @@ Compiling module xil_defaultlib.PC
 Compiling module xil_defaultlib.IM
 Compiling module xil_defaultlib.AddALU
 Compiling module xil_defaultlib.MUX2_1
+Compiling module xil_defaultlib.MUX2_1(N=5)
 Compiling module xil_defaultlib.MainControl
 Compiling module xil_defaultlib.ExtSign
-Compiling module xil_defaultlib.MUX2_1(N=5)
 Compiling module xil_defaultlib.RegistersBank
 Compiling module xil_defaultlib.ALU
 Compiling module xil_defaultlib.DM

@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Sun Jul 21 00:13:23 2024
+# Process ID: 2620
+# Current directory: C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1688 C:\Users\Gabi\Desktop\AMD\proiecte verilog\proiect-AMD\calc\calc.xpr
+# Log file: C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/vivado.log
+# Journal file: C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc\vivado.jou
+# Running On        :Gabi
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :AMD Ryzen 5 7520U with Radeon Graphics         
+# CPU Frequency     :2795 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :16363 MB
+# Swap memory       :1073 MB
+# Total Virtual     :17437 MB
+# Available Virtual :13194 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/calc.xpr}
+update_compile_order -fileset sources_1

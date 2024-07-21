@@ -3,10 +3,10 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Sun Jul 14 13:53:51 2024
-# Process ID: 18240
+# Start of session at: Sat Jul 20 19:34:39 2024
+# Process ID: 16560
 # Current directory: C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18524 C:\Users\Gabi\Desktop\AMD\proiecte verilog\proiect-AMD\calc\calc.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10568 C:\Users\Gabi\Desktop\AMD\proiecte verilog\proiect-AMD\calc\calc.xpr
 # Log file: C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/vivado.log
 # Journal file: C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc\vivado.jou
 # Running On        :Gabi
@@ -19,8 +19,14 @@
 # Host memory       :16363 MB
 # Swap memory       :3221 MB
 # Total Virtual     :19584 MB
-# Available Virtual :10351 MB
+# Available Virtual :8010 MB
 #-----------------------------------------------------------
 start_gui
 open_project {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/calc.xpr}
 update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config {C:/Users/Gabi/Desktop/AMD/proiecte verilog/proiect-AMD/calc/tb_behav.wcfg}
+source tb.tcl
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
