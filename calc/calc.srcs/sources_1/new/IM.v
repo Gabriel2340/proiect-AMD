@@ -5,14 +5,13 @@ module IM(
     adr,
     instr
     );
-    parameter MAX_MEM = 32'hffff;
     input [31:0] adr;
     output reg [31:0] instr;
     
-    reg [7:0] mem [MAX_MEM-1:0];
+    reg [7:0] mem [65535:0];
     
     initial begin
-        $readmemb("instr.mem", mem);
+        $readmemh("instr.mem", mem);
     end
     
     always @(*) begin
